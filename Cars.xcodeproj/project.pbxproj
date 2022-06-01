@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		35433AF7284729720093ADA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433AF6284729720093ADA2 /* AppDelegate.swift */; };
-		35433AFB284729720093ADA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433AFA284729720093ADA2 /* ViewController.swift */; };
-		35433AFE284729720093ADA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35433AFC284729720093ADA2 /* Main.storyboard */; };
+		35433AFB284729720093ADA2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433AFA284729720093ADA2 /* HomeController.swift */; };
 		35433B01284729720093ADA2 /* Cars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35433AFF284729720093ADA2 /* Cars.xcdatamodeld */; };
 		35433B03284729750093ADA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35433B02284729750093ADA2 /* Assets.xcassets */; };
 		35433B06284729750093ADA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35433B04284729750093ADA2 /* LaunchScreen.storyboard */; };
@@ -31,13 +30,18 @@
 		35433B58284744900093ADA2 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4C284744900093ADA2 /* SFUIText-Bold.ttf */; };
 		35433B59284744900093ADA2 /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4D284744900093ADA2 /* SFUIText-Semibold.ttf */; };
 		35433B5A284744900093ADA2 /* SFUIText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4E284744900093ADA2 /* SFUIText-Heavy.ttf */; };
+		35433B5E284753FC0093ADA2 /* CarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B5D284753FC0093ADA2 /* CarsModel.swift */; };
+		35433B602847582A0093ADA2 /* CarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B5F2847582A0093ADA2 /* CarsViewModel.swift */; };
+		35433B6228476CD90093ADA2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B6128476CD90093ADA2 /* CarListViewModel.swift */; };
+		355C86882847B9A0004D3F93 /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */; };
+		355C868A2847C115004D3F93 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C86892847C115004D3F93 /* UIColor+Extension.swift */; };
+		355C868F2847D7DC004D3F93 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355C868E2847D7DC004D3F93 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35433AF3284729720093ADA2 /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35433AF6284729720093ADA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		35433AFA284729720093ADA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35433AFD284729720093ADA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		35433AFA284729720093ADA2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		35433B00284729720093ADA2 /* Cars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cars.xcdatamodel; sourceTree = "<group>"; };
 		35433B02284729750093ADA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35433B05284729750093ADA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,6 +56,12 @@
 		35433B4C284744900093ADA2 /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
 		35433B4D284744900093ADA2 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
 		35433B4E284744900093ADA2 /* SFUIText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Heavy.ttf"; sourceTree = "<group>"; };
+		35433B5D284753FC0093ADA2 /* CarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsModel.swift; sourceTree = "<group>"; };
+		35433B5F2847582A0093ADA2 /* CarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewModel.swift; sourceTree = "<group>"; };
+		35433B6128476CD90093ADA2 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
+		355C86892847C115004D3F93 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		355C868E2847D7DC004D3F93 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +108,6 @@
 				35433B2128473B7F0093ADA2 /* Helpers */,
 				35433B33284742410093ADA2 /* Fonts */,
 				35433AF6284729720093ADA2 /* AppDelegate.swift */,
-				35433AFA284729720093ADA2 /* ViewController.swift */,
-				35433AFC284729720093ADA2 /* Main.storyboard */,
 				35433B02284729750093ADA2 /* Assets.xcassets */,
 				35433B04284729750093ADA2 /* LaunchScreen.storyboard */,
 				35433B07284729750093ADA2 /* Info.plist */,
@@ -111,6 +119,7 @@
 		35433B1E28473B4C0093ADA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				35433B5D284753FC0093ADA2 /* CarsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -118,6 +127,9 @@
 		35433B1F28473B510093ADA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				35433AFA284729720093ADA2 /* HomeController.swift */,
+				355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */,
+				355C868E2847D7DC004D3F93 /* Storyboard.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -125,6 +137,8 @@
 		35433B2028473B570093ADA2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				35433B5F2847582A0093ADA2 /* CarsViewModel.swift */,
+				35433B6128476CD90093ADA2 /* CarListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -160,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				35433B5C2847532E0093ADA2 /* Font */,
+				355C86892847C115004D3F93 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -264,11 +279,11 @@
 			files = (
 				35433B56284744900093ADA2 /* SFUIText-Regular.ttf in Resources */,
 				35433B54284744900093ADA2 /* SFUIText-Medium.ttf in Resources */,
+				355C868F2847D7DC004D3F93 /* Storyboard.storyboard in Resources */,
 				35433B59284744900093ADA2 /* SFUIText-Semibold.ttf in Resources */,
 				35433B06284729750093ADA2 /* LaunchScreen.storyboard in Resources */,
 				35433B03284729750093ADA2 /* Assets.xcassets in Resources */,
 				35433B5A284744900093ADA2 /* SFUIText-Heavy.ttf in Resources */,
-				35433AFE284729720093ADA2 /* Main.storyboard in Resources */,
 				35433B50284744900093ADA2 /* SFUIText-Light.ttf in Resources */,
 				35433B58284744900093ADA2 /* SFUIText-Bold.ttf in Resources */,
 			);
@@ -282,9 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				35433B32284741780093ADA2 /* UIFont+Extension.swift in Sources */,
+				35433B602847582A0093ADA2 /* CarsViewModel.swift in Sources */,
 				35433B2C28473DBE0093ADA2 /* NetworkManager.swift in Sources */,
-				35433AFB284729720093ADA2 /* ViewController.swift in Sources */,
+				355C868A2847C115004D3F93 /* UIColor+Extension.swift in Sources */,
+				35433AFB284729720093ADA2 /* HomeController.swift in Sources */,
 				35433B2728473BD60093ADA2 /* LogHelper.swift in Sources */,
+				35433B6228476CD90093ADA2 /* CarListViewModel.swift in Sources */,
+				355C86882847B9A0004D3F93 /* CarsTableViewCell.swift in Sources */,
+				35433B5E284753FC0093ADA2 /* CarsModel.swift in Sources */,
 				35433B2528473B9D0093ADA2 /* RequestManger.swift in Sources */,
 				35433AF7284729720093ADA2 /* AppDelegate.swift in Sources */,
 				35433B01284729720093ADA2 /* Cars.xcdatamodeld in Sources */,
@@ -294,14 +314,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		35433AFC284729720093ADA2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35433AFD284729720093ADA2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		35433B04284729750093ADA2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,10 +451,10 @@
 				INFOPLIST_FILE = Cars/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -468,10 +480,10 @@
 				INFOPLIST_FILE = Cars/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

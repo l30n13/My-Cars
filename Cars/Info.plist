@@ -11,5 +11,11 @@
 		<string>SFUIText-Regular.ttf</string>
 		<string>SFUIText-SemiBold.ttf</string>
 	</array>
+    <key>UIUserInterfaceStyle</key>
+    <string>Light</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<false/>
 </dict>
 </plist>

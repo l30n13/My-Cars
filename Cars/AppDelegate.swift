@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IHProgressHUD
 import CoreData
 
 @main
@@ -14,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        setupProgressHUD()
+        setupNavigation()
+        entryPoint()
         return true
     }
 
@@ -61,6 +66,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
-
 }
 
+extension AppDelegate {
+    private func setupNavigation() {
+        UINavigationBar.appearance().titleTextAttributes = [
+            .foregroundColor: UIColor.white!,
+            .font: UIFont.SFUIText(.medium, size: 17)
+        ]
+    }
+    private func entryPoint() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = HomeController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window.rootViewController = navigationController
+        window.makeKeyAndVisible()
+        self.window = window
+    }
+    
+    private func setupProgressHUD() {
+        IHProgressHUD.set(defaultStyle: .dark)
+        IHProgressHUD.set(minimumDismiss: 0.3)
+    }
+}
