@@ -13,6 +13,12 @@
 		35433B01284729720093ADA2 /* Cars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35433AFF284729720093ADA2 /* Cars.xcdatamodeld */; };
 		35433B03284729750093ADA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35433B02284729750093ADA2 /* Assets.xcassets */; };
 		35433B06284729750093ADA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35433B04284729750093ADA2 /* LaunchScreen.storyboard */; };
+		35433B0F28472A760093ADA2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B0E28472A760093ADA2 /* RxCocoa */; };
+		35433B1128472A760093ADA2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1028472A760093ADA2 /* RxSwift */; };
+		35433B1428472B030093ADA2 /* IHProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1328472B030093ADA2 /* IHProgressHUD */; };
+		35433B1728472B550093ADA2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1628472B550093ADA2 /* SDWebImage */; };
+		35433B1A28472B950093ADA2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1928472B950093ADA2 /* Alamofire */; };
+		35433B1D28472BAD0093ADA2 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1C28472BAD0093ADA2 /* ObjectMapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +37,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35433B1D28472BAD0093ADA2 /* ObjectMapper in Frameworks */,
+				35433B1A28472B950093ADA2 /* Alamofire in Frameworks */,
+				35433B1128472A760093ADA2 /* RxSwift in Frameworks */,
+				35433B1428472B030093ADA2 /* IHProgressHUD in Frameworks */,
+				35433B1728472B550093ADA2 /* SDWebImage in Frameworks */,
+				35433B0F28472A760093ADA2 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +95,14 @@
 			dependencies = (
 			);
 			name = Cars;
+			packageProductDependencies = (
+				35433B0E28472A760093ADA2 /* RxCocoa */,
+				35433B1028472A760093ADA2 /* RxSwift */,
+				35433B1328472B030093ADA2 /* IHProgressHUD */,
+				35433B1628472B550093ADA2 /* SDWebImage */,
+				35433B1928472B950093ADA2 /* Alamofire */,
+				35433B1C28472BAD0093ADA2 /* ObjectMapper */,
+			);
 			productName = Cars;
 			productReference = 35433AF3284729720093ADA2 /* Cars.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,13 @@
 				Base,
 			);
 			mainGroup = 35433AEA284729720093ADA2;
+			packageReferences = (
+				35433B0D28472A760093ADA2 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				35433B1228472B030093ADA2 /* XCRemoteSwiftPackageReference "IHProgressHUD" */,
+				35433B1528472B550093ADA2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				35433B1828472B950093ADA2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+			);
 			productRefGroup = 35433AF4284729720093ADA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -360,6 +387,82 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		35433B0D28472A760093ADA2 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 6.5.0;
+			};
+		};
+		35433B1228472B030093ADA2 /* XCRemoteSwiftPackageReference "IHProgressHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swiftify-Corp/IHProgressHUD.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.8;
+			};
+		};
+		35433B1528472B550093ADA2 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		35433B1828472B950093ADA2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.6.0;
+			};
+		};
+		35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		35433B0E28472A760093ADA2 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B0D28472A760093ADA2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		35433B1028472A760093ADA2 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B0D28472A760093ADA2 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		35433B1328472B030093ADA2 /* IHProgressHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B1228472B030093ADA2 /* XCRemoteSwiftPackageReference "IHProgressHUD" */;
+			productName = IHProgressHUD;
+		};
+		35433B1628472B550093ADA2 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B1528472B550093ADA2 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		35433B1928472B950093ADA2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B1828472B950093ADA2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		35433B1C28472BAD0093ADA2 /* ObjectMapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
+			productName = ObjectMapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		35433AFF284729720093ADA2 /* Cars.xcdatamodeld */ = {
