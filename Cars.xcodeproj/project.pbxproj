@@ -19,6 +19,18 @@
 		35433B1728472B550093ADA2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1628472B550093ADA2 /* SDWebImage */; };
 		35433B1A28472B950093ADA2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1928472B950093ADA2 /* Alamofire */; };
 		35433B1D28472BAD0093ADA2 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1C28472BAD0093ADA2 /* ObjectMapper */; };
+		35433B2528473B9D0093ADA2 /* RequestManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B2428473B9D0093ADA2 /* RequestManger.swift */; };
+		35433B2728473BD60093ADA2 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B2628473BD60093ADA2 /* LogHelper.swift */; };
+		35433B2A28473D830093ADA2 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B2928473D830093ADA2 /* NotificationBannerSwift */; };
+		35433B2C28473DBE0093ADA2 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B2B28473DBE0093ADA2 /* NetworkManager.swift */; };
+		35433B2F28473E4D0093ADA2 /* Reachability in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B2E28473E4D0093ADA2 /* Reachability */; };
+		35433B32284741780093ADA2 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B31284741780093ADA2 /* UIFont+Extension.swift */; };
+		35433B50284744900093ADA2 /* SFUIText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B44284744900093ADA2 /* SFUIText-Light.ttf */; };
+		35433B54284744900093ADA2 /* SFUIText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B48284744900093ADA2 /* SFUIText-Medium.ttf */; };
+		35433B56284744900093ADA2 /* SFUIText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4A284744900093ADA2 /* SFUIText-Regular.ttf */; };
+		35433B58284744900093ADA2 /* SFUIText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4C284744900093ADA2 /* SFUIText-Bold.ttf */; };
+		35433B59284744900093ADA2 /* SFUIText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4D284744900093ADA2 /* SFUIText-Semibold.ttf */; };
+		35433B5A284744900093ADA2 /* SFUIText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35433B4E284744900093ADA2 /* SFUIText-Heavy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +42,16 @@
 		35433B02284729750093ADA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35433B05284729750093ADA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35433B07284729750093ADA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35433B2428473B9D0093ADA2 /* RequestManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManger.swift; sourceTree = "<group>"; };
+		35433B2628473BD60093ADA2 /* LogHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
+		35433B2B28473DBE0093ADA2 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		35433B31284741780093ADA2 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		35433B44284744900093ADA2 /* SFUIText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Light.ttf"; sourceTree = "<group>"; };
+		35433B48284744900093ADA2 /* SFUIText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Medium.ttf"; sourceTree = "<group>"; };
+		35433B4A284744900093ADA2 /* SFUIText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Regular.ttf"; sourceTree = "<group>"; };
+		35433B4C284744900093ADA2 /* SFUIText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Bold.ttf"; sourceTree = "<group>"; };
+		35433B4D284744900093ADA2 /* SFUIText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Semibold.ttf"; sourceTree = "<group>"; };
+		35433B4E284744900093ADA2 /* SFUIText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFUIText-Heavy.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,10 +59,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35433B2A28473D830093ADA2 /* NotificationBannerSwift in Frameworks */,
 				35433B1D28472BAD0093ADA2 /* ObjectMapper in Frameworks */,
 				35433B1A28472B950093ADA2 /* Alamofire in Frameworks */,
 				35433B1128472A760093ADA2 /* RxSwift in Frameworks */,
 				35433B1428472B030093ADA2 /* IHProgressHUD in Frameworks */,
+				35433B2F28473E4D0093ADA2 /* Reachability in Frameworks */,
 				35433B1728472B550093ADA2 /* SDWebImage in Frameworks */,
 				35433B0F28472A760093ADA2 /* RxCocoa in Frameworks */,
 			);
@@ -68,6 +92,11 @@
 		35433AF5284729720093ADA2 /* Cars */ = {
 			isa = PBXGroup;
 			children = (
+				35433B1E28473B4C0093ADA2 /* Models */,
+				35433B1F28473B510093ADA2 /* Views */,
+				35433B2028473B570093ADA2 /* ViewModels */,
+				35433B2128473B7F0093ADA2 /* Helpers */,
+				35433B33284742410093ADA2 /* Fonts */,
 				35433AF6284729720093ADA2 /* AppDelegate.swift */,
 				35433AFA284729720093ADA2 /* ViewController.swift */,
 				35433AFC284729720093ADA2 /* Main.storyboard */,
@@ -77,6 +106,83 @@
 				35433AFF284729720093ADA2 /* Cars.xcdatamodeld */,
 			);
 			path = Cars;
+			sourceTree = "<group>";
+		};
+		35433B1E28473B4C0093ADA2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		35433B1F28473B510093ADA2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		35433B2028473B570093ADA2 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		35433B2128473B7F0093ADA2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				35433B30284741640093ADA2 /* Extensions */,
+				35433B2328473B8C0093ADA2 /* Managers */,
+				35433B2228473B880093ADA2 /* Enums */,
+				35433B2628473BD60093ADA2 /* LogHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		35433B2228473B880093ADA2 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		35433B2328473B8C0093ADA2 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				35433B2428473B9D0093ADA2 /* RequestManger.swift */,
+				35433B2B28473DBE0093ADA2 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		35433B30284741640093ADA2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35433B5C2847532E0093ADA2 /* Font */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		35433B33284742410093ADA2 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				35433B4C284744900093ADA2 /* SFUIText-Bold.ttf */,
+				35433B4E284744900093ADA2 /* SFUIText-Heavy.ttf */,
+				35433B44284744900093ADA2 /* SFUIText-Light.ttf */,
+				35433B48284744900093ADA2 /* SFUIText-Medium.ttf */,
+				35433B4A284744900093ADA2 /* SFUIText-Regular.ttf */,
+				35433B4D284744900093ADA2 /* SFUIText-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		35433B5C2847532E0093ADA2 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				35433B31284741780093ADA2 /* UIFont+Extension.swift */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,6 +208,8 @@
 				35433B1628472B550093ADA2 /* SDWebImage */,
 				35433B1928472B950093ADA2 /* Alamofire */,
 				35433B1C28472BAD0093ADA2 /* ObjectMapper */,
+				35433B2928473D830093ADA2 /* NotificationBannerSwift */,
+				35433B2E28473E4D0093ADA2 /* Reachability */,
 			);
 			productName = Cars;
 			productReference = 35433AF3284729720093ADA2 /* Cars.app */;
@@ -137,6 +245,8 @@
 				35433B1528472B550093ADA2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				35433B1828472B950093ADA2 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
+				35433B2828473D830093ADA2 /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+				35433B2D28473E4D0093ADA2 /* XCRemoteSwiftPackageReference "Reachability" */,
 			);
 			productRefGroup = 35433AF4284729720093ADA2 /* Products */;
 			projectDirPath = "";
@@ -152,9 +262,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35433B56284744900093ADA2 /* SFUIText-Regular.ttf in Resources */,
+				35433B54284744900093ADA2 /* SFUIText-Medium.ttf in Resources */,
+				35433B59284744900093ADA2 /* SFUIText-Semibold.ttf in Resources */,
 				35433B06284729750093ADA2 /* LaunchScreen.storyboard in Resources */,
 				35433B03284729750093ADA2 /* Assets.xcassets in Resources */,
+				35433B5A284744900093ADA2 /* SFUIText-Heavy.ttf in Resources */,
 				35433AFE284729720093ADA2 /* Main.storyboard in Resources */,
+				35433B50284744900093ADA2 /* SFUIText-Light.ttf in Resources */,
+				35433B58284744900093ADA2 /* SFUIText-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,7 +281,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35433B32284741780093ADA2 /* UIFont+Extension.swift in Sources */,
+				35433B2C28473DBE0093ADA2 /* NetworkManager.swift in Sources */,
 				35433AFB284729720093ADA2 /* ViewController.swift in Sources */,
+				35433B2728473BD60093ADA2 /* LogHelper.swift in Sources */,
+				35433B2528473B9D0093ADA2 /* RequestManger.swift in Sources */,
 				35433AF7284729720093ADA2 /* AppDelegate.swift in Sources */,
 				35433B01284729720093ADA2 /* Cars.xcdatamodeld in Sources */,
 			);
@@ -429,6 +549,22 @@
 				minimumVersion = 4.2.0;
 			};
 		};
+		35433B2828473D830093ADA2 /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.1.0;
+			};
+		};
+		35433B2D28473E4D0093ADA2 /* XCRemoteSwiftPackageReference "Reachability" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashleymills/Reachability.swift";
+			requirement = {
+				kind = exactVersion;
+				version = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -461,6 +597,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
 			productName = ObjectMapper;
+		};
+		35433B2928473D830093ADA2 /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B2828473D830093ADA2 /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+		35433B2E28473E4D0093ADA2 /* Reachability */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 35433B2D28473E4D0093ADA2 /* XCRemoteSwiftPackageReference "Reachability" */;
+			productName = Reachability;
 		};
 /* End XCSwiftPackageProductDependency section */
 
