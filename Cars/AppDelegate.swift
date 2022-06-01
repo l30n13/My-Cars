@@ -74,6 +74,7 @@ extension AppDelegate {
             .foregroundColor: UIColor.white!,
             .font: UIFont.SFUIText(.medium, size: 17)
         ]
+        UINavigationBar.appearance().barTintColor = .greyish
     }
     private func entryPoint() {
         let window = UIWindow(frame: UIScreen.main.bounds)
