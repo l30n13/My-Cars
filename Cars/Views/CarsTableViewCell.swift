@@ -54,14 +54,6 @@ class CarsTableViewCell: UITableViewCell {
     }()
     lazy var gradientView: UIView = {
         let view = UIView()
-//        view.backgroundColor = .blue
-        let initialColor = UIColor.black // our initial color
-        let finalColor = initialColor!.withAlphaComponent(0.0) // our initial color with transparency
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.colors = [UIColor.white!.cgColor, UIColor.black!.cgColor]
-        gradientLayer.frame = view.bounds
-        view.layer.addSublayer(gradientLayer)
         return view
     }()
     
@@ -85,9 +77,9 @@ class CarsTableViewCell: UITableViewCell {
 
 extension CarsTableViewCell {
     private func setupUI() {
-        contentView.addSubview(image)
-        contentView.backgroundColor = .red
+        contentView.backgroundColor = .black
         
+        contentView.addSubview(image)
         image.snp.makeConstraints { make in
             make.top.equalTo(0)
             make.leading.equalTo(0)
@@ -109,7 +101,7 @@ extension CarsTableViewCell {
             make.leading.equalTo(0)
             make.trailing.equalTo(0)
             make.bottom.equalTo(0)
-            make.height.equalTo(426)
+//            make.height.equalTo(426)
         }
         
         mainView.addSubview(titleLabel)
@@ -132,14 +124,21 @@ extension CarsTableViewCell {
             make.bottom.equalTo(mainView.snp.bottom).offset(-16)
         }
         
-        mainView.addSubview(gradientView)
+        contentView.addSubview(gradientView)
         gradientView.snp.makeConstraints { make in
-            make.top.equalTo(mainView.snp.top)
-            make.leading.equalTo(mainView.snp.leading)
-            make.trailing.equalTo(mainView.snp.trailing)
-            make.bottom.equalTo(mainView.snp.bottom)
+            make.top.equalTo(titleLabel.snp.top).offset(-20)
+            make.leading.equalTo(0)
+            make.trailing.equalTo(0)
+            make.bottom.equalTo(0)
         }
-        mainView.bringSubviewToFront(gradientView)
+        DispatchQueue.main.async {
+            let gradientLayer = CAGradientLayer()
+            gradientLayer.colors = [UIColor.black!.withAlphaComponent(0.0).cgColor, UIColor.black!.cgColor, UIColor.black!.cgColor, UIColor.black!.cgColor]
+            gradientLayer.frame = self.gradientView.bounds
+            self.gradientView.layer.addSublayer(gradientLayer)
+        }
+        
+        contentView.bringSubviewToFront(mainView)
     }
 }
 
