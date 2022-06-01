@@ -59,10 +59,7 @@ extension HomeController {
                 cellIdentifier: "CarsTableViewCell",
                 cellType: CarsTableViewCell.self)
         ) { (row, model, cell) in
-//            cell.textLabel?.text = model.dateTime
-            
             cell.loadData(data: model)
-            
         }
     }
 }
