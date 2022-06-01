@@ -35,7 +35,6 @@
 		35433B6228476CD90093ADA2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B6128476CD90093ADA2 /* CarListViewModel.swift */; };
 		355C86882847B9A0004D3F93 /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */; };
 		355C868A2847C115004D3F93 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C86892847C115004D3F93 /* UIColor+Extension.swift */; };
-		355C868F2847D7DC004D3F93 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 355C868E2847D7DC004D3F93 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		35433B6128476CD90093ADA2 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
 		355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
 		355C86892847C115004D3F93 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
-		355C868E2847D7DC004D3F93 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,7 +127,6 @@
 			children = (
 				35433AFA284729720093ADA2 /* HomeController.swift */,
 				355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */,
-				355C868E2847D7DC004D3F93 /* Storyboard.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -279,7 +276,6 @@
 			files = (
 				35433B56284744900093ADA2 /* SFUIText-Regular.ttf in Resources */,
 				35433B54284744900093ADA2 /* SFUIText-Medium.ttf in Resources */,
-				355C868F2847D7DC004D3F93 /* Storyboard.storyboard in Resources */,
 				35433B59284744900093ADA2 /* SFUIText-Semibold.ttf in Resources */,
 				35433B06284729750093ADA2 /* LaunchScreen.storyboard in Resources */,
 				35433B03284729750093ADA2 /* Assets.xcassets in Resources */,
