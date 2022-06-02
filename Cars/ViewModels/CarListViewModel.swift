@@ -26,7 +26,7 @@ class CarListViewModel {
             IHProgressHUD.dismiss()
             switch error {
             case .noInternet:
-                let banner = FloatingNotificationBanner(title: "No Internet!", subtitle: "Please make sure you are connected to the internet. Thank you!", titleFont: .SFUIText(.medium, size: 15), subtitleFont: .SFUIText(.regular, size: 15), style: .warning)
+                let banner = FloatingNotificationBanner(title: "No Internet!", subtitle: "Please make sure you are connected to the internet. Thank you!", titleFont: .SFUIText(.medium, size: 15), subtitleFont: .SFUIText(.regular, size: 15), style: .danger)
                 banner.show()
                 
                 self?.loadFromLocal()
