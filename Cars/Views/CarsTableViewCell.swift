@@ -101,7 +101,7 @@ extension CarsTableViewCell {
             make.leading.equalTo(0)
             make.trailing.equalTo(0)
             make.bottom.equalTo(0)
-//            make.height.equalTo(426)
+            make.height.equalTo(446).priority(.low)
         }
         
         mainView.addSubview(titleLabel)
