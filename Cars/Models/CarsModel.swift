@@ -13,7 +13,7 @@ struct CarsResponse : Codable {
     var serverTime : Int?
 }
 
-struct CarsModel : Codable {
+struct CarsModel : Codable, CarsData {
     var id : Int?
     var title : String?
     var dateTime : String?
@@ -21,10 +21,10 @@ struct CarsModel : Codable {
     var content : [CarsDetailsModel]?
     var ingress : String?
     var image : String?
+    var imageData: Data?
     var created : Int?
     var changed : Int?
 }
-
 
 struct CarsDetailsModel : Codable {
     var type : String?

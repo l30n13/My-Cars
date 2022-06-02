@@ -20,8 +20,19 @@ class HomeController: UIViewController {
     lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.refreshControl = refreshControl
-        tableView.register(CarsTableViewCell.self, forCellReuseIdentifier: "CarsTableViewCell")        
+        tableView.register(CarsTableViewCell.self, forCellReuseIdentifier: "CarsTableViewCell")
         return tableView
+    }()
+    
+    lazy var emptyLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
+        label.textColor           = UIColor.black
+        label.font                = .SFUIText(.medium, size: 20)
+        label.textAlignment       = .center
+        label.lineBreakMode       = .byWordWrapping
+        label.numberOfLines       = 0
+        label.text = "No Data Found"
+        return label
     }()
     
     var viewModel = CarListViewModel()
@@ -48,7 +59,7 @@ extension HomeController {
             make.trailing.equalTo(view.snp.trailing)
             make.bottom.equalTo(view.snp.bottom)
         }
-            
+        
         topView.addSubview(tableView)
         tableView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
@@ -59,7 +70,17 @@ extension HomeController {
     }
     
     fileprivate func bindTableData() {
-        viewModel.anotherCarList.bind(
+        viewModel.carsList.bind { [weak self] (data) in
+            self?.refreshControl.endRefreshing()
+            if data.count > 0 {
+                self?.tableView.backgroundView        = nil
+            } else {
+                self?.tableView.backgroundView        = self?.emptyLabel
+                self?.tableView.separatorStyle        = .none
+            }
+        }.disposed(by: bag)
+        
+        viewModel.carsList.bind(
             to: tableView.rx.items(
                 cellIdentifier: "CarsTableViewCell",
                 cellType: CarsTableViewCell.self)

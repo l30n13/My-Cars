@@ -17,7 +17,6 @@ struct RequestManager {
         case noInternet
         case networkProblem
         case errorDescription(Error)
-        
     }
     
     typealias successResponse = ((Data) -> Void)

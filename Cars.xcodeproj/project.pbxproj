@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		35433AF7284729720093ADA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433AF6284729720093ADA2 /* AppDelegate.swift */; };
 		35433AFB284729720093ADA2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433AFA284729720093ADA2 /* HomeController.swift */; };
-		35433B01284729720093ADA2 /* Cars.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 35433AFF284729720093ADA2 /* Cars.xcdatamodeld */; };
 		35433B03284729750093ADA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35433B02284729750093ADA2 /* Assets.xcassets */; };
 		35433B06284729750093ADA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35433B04284729750093ADA2 /* LaunchScreen.storyboard */; };
 		35433B0F28472A760093ADA2 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B0E28472A760093ADA2 /* RxCocoa */; };
@@ -17,7 +16,6 @@
 		35433B1428472B030093ADA2 /* IHProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1328472B030093ADA2 /* IHProgressHUD */; };
 		35433B1728472B550093ADA2 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1628472B550093ADA2 /* SDWebImage */; };
 		35433B1A28472B950093ADA2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1928472B950093ADA2 /* Alamofire */; };
-		35433B1D28472BAD0093ADA2 /* ObjectMapper in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B1C28472BAD0093ADA2 /* ObjectMapper */; };
 		35433B2528473B9D0093ADA2 /* RequestManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B2428473B9D0093ADA2 /* RequestManger.swift */; };
 		35433B2728473BD60093ADA2 /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B2628473BD60093ADA2 /* LogHelper.swift */; };
 		35433B2A28473D830093ADA2 /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 35433B2928473D830093ADA2 /* NotificationBannerSwift */; };
@@ -35,13 +33,16 @@
 		35433B6228476CD90093ADA2 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35433B6128476CD90093ADA2 /* CarListViewModel.swift */; };
 		355C86882847B9A0004D3F93 /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */; };
 		355C868A2847C115004D3F93 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355C86892847C115004D3F93 /* UIColor+Extension.swift */; };
+		357AA78A284882E300B40734 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 357AA789284882E300B40734 /* RealmSwift */; };
+		357AA78C284887AB00B40734 /* RealmCarsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA78B284887AB00B40734 /* RealmCarsModel.swift */; };
+		357AA78F284889EB00B40734 /* CarsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA78E284889EB00B40734 /* CarsData.swift */; };
+		357AA79228488AB600B40734 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357AA79128488AB600B40734 /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		35433AF3284729720093ADA2 /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35433AF6284729720093ADA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35433AFA284729720093ADA2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		35433B00284729720093ADA2 /* Cars.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Cars.xcdatamodel; sourceTree = "<group>"; };
 		35433B02284729750093ADA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35433B05284729750093ADA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35433B07284729750093ADA2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +61,9 @@
 		35433B6128476CD90093ADA2 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
 		355C86872847B9A0004D3F93 /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
 		355C86892847C115004D3F93 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		357AA78B284887AB00B40734 /* RealmCarsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCarsModel.swift; sourceTree = "<group>"; };
+		357AA78E284889EB00B40734 /* CarsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsData.swift; sourceTree = "<group>"; };
+		357AA79128488AB600B40734 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,8 +72,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				35433B2A28473D830093ADA2 /* NotificationBannerSwift in Frameworks */,
-				35433B1D28472BAD0093ADA2 /* ObjectMapper in Frameworks */,
 				35433B1A28472B950093ADA2 /* Alamofire in Frameworks */,
+				357AA78A284882E300B40734 /* RealmSwift in Frameworks */,
 				35433B1128472A760093ADA2 /* RxSwift in Frameworks */,
 				35433B1428472B030093ADA2 /* IHProgressHUD in Frameworks */,
 				35433B2F28473E4D0093ADA2 /* Reachability in Frameworks */,
@@ -109,7 +113,6 @@
 				35433B02284729750093ADA2 /* Assets.xcassets */,
 				35433B04284729750093ADA2 /* LaunchScreen.storyboard */,
 				35433B07284729750093ADA2 /* Info.plist */,
-				35433AFF284729720093ADA2 /* Cars.xcdatamodeld */,
 			);
 			path = Cars;
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				35433B5D284753FC0093ADA2 /* CarsModel.swift */,
+				357AA78B284887AB00B40734 /* RealmCarsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,17 +149,18 @@
 			children = (
 				35433B30284741640093ADA2 /* Extensions */,
 				35433B2328473B8C0093ADA2 /* Managers */,
-				35433B2228473B880093ADA2 /* Enums */,
+				35433B2228473B880093ADA2 /* Protocols */,
 				35433B2628473BD60093ADA2 /* LogHelper.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		35433B2228473B880093ADA2 /* Enums */ = {
+		35433B2228473B880093ADA2 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				357AA78E284889EB00B40734 /* CarsData.swift */,
 			);
-			path = Enums;
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		35433B2328473B8C0093ADA2 /* Managers */ = {
@@ -163,6 +168,7 @@
 			children = (
 				35433B2428473B9D0093ADA2 /* RequestManger.swift */,
 				35433B2B28473DBE0093ADA2 /* NetworkManager.swift */,
+				357AA79128488AB600B40734 /* RealmManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -171,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				35433B5C2847532E0093ADA2 /* Font */,
-				355C86892847C115004D3F93 /* UIColor+Extension.swift */,
+				357AA78D284889D100B40734 /* Color */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +203,14 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		357AA78D284889D100B40734 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				355C86892847C115004D3F93 /* UIColor+Extension.swift */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +233,9 @@
 				35433B1328472B030093ADA2 /* IHProgressHUD */,
 				35433B1628472B550093ADA2 /* SDWebImage */,
 				35433B1928472B950093ADA2 /* Alamofire */,
-				35433B1C28472BAD0093ADA2 /* ObjectMapper */,
 				35433B2928473D830093ADA2 /* NotificationBannerSwift */,
 				35433B2E28473E4D0093ADA2 /* Reachability */,
+				357AA789284882E300B40734 /* RealmSwift */,
 			);
 			productName = Cars;
 			productReference = 35433AF3284729720093ADA2 /* Cars.app */;
@@ -256,9 +270,9 @@
 				35433B1228472B030093ADA2 /* XCRemoteSwiftPackageReference "IHProgressHUD" */,
 				35433B1528472B550093ADA2 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				35433B1828472B950093ADA2 /* XCRemoteSwiftPackageReference "Alamofire" */,
-				35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */,
 				35433B2828473D830093ADA2 /* XCRemoteSwiftPackageReference "NotificationBanner" */,
 				35433B2D28473E4D0093ADA2 /* XCRemoteSwiftPackageReference "Reachability" */,
+				357AA788284882E300B40734 /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = 35433AF4284729720093ADA2 /* Products */;
 			projectDirPath = "";
@@ -297,13 +311,15 @@
 				35433B2C28473DBE0093ADA2 /* NetworkManager.swift in Sources */,
 				355C868A2847C115004D3F93 /* UIColor+Extension.swift in Sources */,
 				35433AFB284729720093ADA2 /* HomeController.swift in Sources */,
+				357AA79228488AB600B40734 /* RealmManager.swift in Sources */,
+				357AA78F284889EB00B40734 /* CarsData.swift in Sources */,
+				357AA78C284887AB00B40734 /* RealmCarsModel.swift in Sources */,
 				35433B2728473BD60093ADA2 /* LogHelper.swift in Sources */,
 				35433B6228476CD90093ADA2 /* CarListViewModel.swift in Sources */,
 				355C86882847B9A0004D3F93 /* CarsTableViewCell.swift in Sources */,
 				35433B5E284753FC0093ADA2 /* CarsModel.swift in Sources */,
 				35433B2528473B9D0093ADA2 /* RequestManger.swift in Sources */,
 				35433AF7284729720093ADA2 /* AppDelegate.swift in Sources */,
-				35433B01284729720093ADA2 /* Cars.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,14 +565,6 @@
 				minimumVersion = 5.6.0;
 			};
 		};
-		35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tristanhimmelman/ObjectMapper.git";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
 		35433B2828473D830093ADA2 /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Daltron/NotificationBanner";
@@ -571,6 +579,14 @@
 			requirement = {
 				kind = exactVersion;
 				version = 5.1.0;
+			};
+		};
+		357AA788284882E300B40734 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				kind = exactVersion;
+				version = 10.27.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -601,11 +617,6 @@
 			package = 35433B1828472B950093ADA2 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		35433B1C28472BAD0093ADA2 /* ObjectMapper */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 35433B1B28472BAD0093ADA2 /* XCRemoteSwiftPackageReference "ObjectMapper" */;
-			productName = ObjectMapper;
-		};
 		35433B2928473D830093ADA2 /* NotificationBannerSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 35433B2828473D830093ADA2 /* XCRemoteSwiftPackageReference "NotificationBanner" */;
@@ -616,20 +627,12 @@
 			package = 35433B2D28473E4D0093ADA2 /* XCRemoteSwiftPackageReference "Reachability" */;
 			productName = Reachability;
 		};
-/* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		35433AFF284729720093ADA2 /* Cars.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				35433B00284729720093ADA2 /* Cars.xcdatamodel */,
-			);
-			currentVersion = 35433B00284729720093ADA2 /* Cars.xcdatamodel */;
-			path = Cars.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+		357AA789284882E300B40734 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 357AA788284882E300B40734 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
 		};
-/* End XCVersionGroup section */
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35433AEB284729720093ADA2 /* Project object */;
 }

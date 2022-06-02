@@ -8,9 +8,13 @@
 import Foundation
 
 struct CarsViewModel {
-    var carData: CarsModel
+    var carData: CarsData
     
     init(carData: CarsModel) {
+        self.carData = carData
+    }
+    
+    init(carData: RealmCarsModel) {
         self.carData = carData
     }
     
@@ -19,6 +23,9 @@ struct CarsViewModel {
     }
     var carImage: String {
         carData.image ?? ""
+    }
+    var carImageData: Data? {
+        carData.imageData
     }
     var title: String {
         carData.title ?? ""
