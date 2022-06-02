@@ -14,6 +14,9 @@ struct CarsViewModel {
         self.carData = carData
     }
     
+    var id: Int {
+        carData.id ?? 0
+    }
     var carImage: String {
         carData.image ?? ""
     }
