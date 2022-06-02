@@ -14,7 +14,7 @@ class HomeController: UIViewController {
     
     lazy var topView: UIView = {
         let view = UIView()
-        view.backgroundColor = .darkGray
+        view.backgroundColor = .greyishBrownTwo
         return view
     }()
     lazy var tableView: UITableView = {
