@@ -12,30 +12,34 @@ import RxSwift
 class HomeController: UIViewController {
     private let refreshControl = UIRefreshControl()
     
-    lazy var topView: UIView = {
+    private lazy var topView: UIView = {
         let view = UIView()
         view.backgroundColor = .greyishBrownTwo
         return view
     }()
-    lazy var tableView: UITableView = {
+    private lazy var tableView: UITableView = {
         let tableView = UITableView()
         tableView.refreshControl = refreshControl
         tableView.register(CarsTableViewCell.self, forCellReuseIdentifier: "CarsTableViewCell")
+        tableView.dataSource = self
+        tableView.delegate = self
         return tableView
     }()
     
-    lazy var emptyLabel: UILabel = {
+    private lazy var emptyLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: tableView.bounds.size.height))
-        label.textColor           = UIColor.black
-        label.font                = .SFUIText(.medium, size: 20)
-        label.textAlignment       = .center
-        label.lineBreakMode       = .byWordWrapping
-        label.numberOfLines       = 0
+        label.textColor = UIColor.black
+        label.font = .SFUIText(.medium, size: 20)
+        label.textAlignment = .center
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 0
         label.text = "No Data Found"
         return label
     }()
     
-    var viewModel = CarListViewModel()
+    private var viewModel = CarListViewModel()
+    private var carList: [CarsViewModel] = []
+    
     private var bag = DisposeBag()
     
     override func viewDidLoad() {
@@ -71,6 +75,9 @@ extension HomeController {
     
     fileprivate func bindTableData() {
         viewModel.carsList.bind { [weak self] (data) in
+            self?.carList = data
+            self?.tableView.reloadData()
+            
             self?.refreshControl.endRefreshing()
             if data.count > 0 {
                 self?.tableView.backgroundView        = nil
@@ -80,19 +87,32 @@ extension HomeController {
             }
         }.disposed(by: bag)
         
-        viewModel.carsList.bind(
-            to: tableView.rx.items(
-                cellIdentifier: "CarsTableViewCell",
-                cellType: CarsTableViewCell.self)
-        ) { [weak self] (row, model, cell) in
-            self?.refreshControl.endRefreshing()
-            cell.loadData(data: model)
-        }.disposed(by: bag)
+        //MARK: Commented this tableview load data using RxSwift because it is making the tableview laggy
+//        viewModel.carsList.bind(
+//            to: tableView.rx.items(
+//                cellIdentifier: "CarsTableViewCell",
+//                cellType: CarsTableViewCell.self)
+//        ) { [weak self] (row, model, cell) in
+//            self?.refreshControl.endRefreshing()
+//            cell.loadData(data: model)
+//        }.disposed(by: bag)
     }
 }
 
 extension HomeController {
     @objc private func refreshTableView(_ sender: Any) {
         viewModel.fetchCarList()
+    }
+}
+
+extension HomeController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return carList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CarsTableViewCell", for: indexPath) as! CarsTableViewCell
+        cell.loadData(data: carList[indexPath.row])
+        return cell
     }
 }
